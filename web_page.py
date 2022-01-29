@@ -4,6 +4,7 @@ def  main():
     import streamlit as st
     from PIL import Image
     import sys
+    import os
     from streamlit import cli as stcli
     st.title("TOP 20 RESTAURANTS IN SYDNEY")
     st.write('''Have you ever wanted to grab great food and tried to search for the best local restaurants and food
