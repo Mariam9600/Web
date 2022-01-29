@@ -62,7 +62,7 @@ def  main():
         col3.image(img, use_column_width=True)
         img=Image.open("/app/web/1. Quay4.jpg")
         col4.image(img, use_column_width=True)
-        img=Image.open("/app/web/1. Quay5.jpg"')
+        img=Image.open("/app/web/1. Quay5.jpg")
         col5.image(img, use_column_width=True)
         if st.button("Read More About "+ names[0][3:]):
             st.write(website[0])
