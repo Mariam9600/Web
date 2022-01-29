@@ -34,7 +34,7 @@ def  main():
 
 
 
-    names=["1.\xa0Quay",  "2.\xa0La Salut", "3.\xa0Lankan Filling Station" ,"4.\xa0Café Paci", "5.\xa0Lola's Level 1", "6.\xa0Saint Peter","7.\xa0Ursula's Paddington", "8.\xa0Sixpenny","9.\xa0Ester",
+    names=["1. Quay",  "2.\xa0La Salut", "3.\xa0Lankan Filling Station" ,"4.\xa0Café Paci", "5.\xa0Lola's Level 1", "6.\xa0Saint Peter","7.\xa0Ursula's Paddington", "8.\xa0Sixpenny","9.\xa0Ester",
            "10.\xa0Sean's","11.\xa0LuMi","12.\xa0Odd Culture Newtown", "13.\xa0Bentley Restaurant and Bar","14.\xa0Hubert", "15.\xa0Margaret","16.\xa0Firedoor",
            "17.\xa0Chaco Bar","18.\xa0Automata", "19.\xa010 William Street","20.\xa0Sáng by Mabasa"]
 
@@ -44,7 +44,7 @@ def  main():
     address=[' Upper Level Overseas Passenger Terminal, The Rocks\n', ' 305 Cleveland St, Redfern\xa0\n', ' Ground Floor, 58 Riley St, Darlinghurst\xa0\n', ' 131 King street, Newtown\n', ' Level 1/180/186 Campbell Parade, Bondi Beach\n', ' 362 Oxford St, Paddington\n', ' 92 Hargrave St, Paddington\xa0\n', ' 83 Percival Rd, Stanmore\n', ' 46_52 meagher st, chippendale\xa0\n', ' 270 Campbell Parade, North Bondi\xa0\n']
     rating=['4.5 stars\n', '4.7 stars\n', '4.2 stars\n', '4.7 stars\n', '3.6 stars\n', '4.6 stars\n', '4.5 stars\n', '4.8 stars\n', '4.5 stars\n', '4.1 stars\n']
 
-    path = os.path.dirname(__file__)
+    path = str(os.path.dirname(__file__))
     #st.write(path)
     #arr = os.listdir()
     #st.write(arr)
@@ -56,7 +56,7 @@ def  main():
         col1,col2,col3,col4, col5=st.columns(5)
         img=Image.open("/app/web/1. Quay1.jpg")
         col1.image(img, use_column_width=True)
-        img=Image.open(path + '/' + names[0]+ str(2)+ '.JPG')
+        img=Image.open(path + '/' + names[0]+ str(2)+ '.jpg')
         col2.image(img, use_column_width=True)
         img=Image.open(path + '/' + names[0]+ str(3)+ '.JPG')
         col3.image(img, use_column_width=True)
