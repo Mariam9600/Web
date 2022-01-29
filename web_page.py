@@ -34,7 +34,7 @@ def  main():
 
 
 
-    names=["1.\xa0Quay",  "2. La Salut", "3. Lankan Filling Station" ,"4.\xa0Café Paci", "5.\xa0Lola's Level 1", "6.\xa0Saint Peter","7.\xa0Ursula's Paddington", "8.\xa0Sixpenny","9.\xa0Ester",
+    names=["1.\xa0Quay",  "2.\xa0La Salut", "3.\xa0Lankan Filling Station" ,"4.\xa0Café Paci", "5.\xa0Lola's Level 1", "6.\xa0Saint Peter","7.\xa0Ursula's Paddington", "8.\xa0Sixpenny","9.\xa0Ester",
            "10.\xa0Sean's","11.\xa0LuMi","12.\xa0Odd Culture Newtown", "13.\xa0Bentley Restaurant and Bar","14.\xa0Hubert", "15.\xa0Margaret","16.\xa0Firedoor",
            "17.\xa0Chaco Bar","18.\xa0Automata", "19.\xa010 William Street","20.\xa0Sáng by Mabasa"]
 
@@ -45,16 +45,16 @@ def  main():
     rating=['4.5 stars\n', '4.7 stars\n', '4.2 stars\n', '4.7 stars\n', '3.6 stars\n', '4.6 stars\n', '4.5 stars\n', '4.8 stars\n', '4.5 stars\n', '4.1 stars\n']
 
     path = os.path.dirname(__file__)
-    st.write(path)
-    arr = os.listdir()
-    st.write(arr)
+    #st.write(path)
+    #arr = os.listdir()
+    #st.write(arr)
     
     with Quay:
         st.header(names[0])
         st.markdown("##### Address :   "+ address[0])
         st.markdown("##### Star-Rating :  "+ rating[0])
         col1,col2,col3,col4, col5=st.columns(5)
-        img=Image.open(path + '/' + names[0]+ str(1) + '.JPG')
+        img=Image.open("/app/web/1. Quay1.jpg")
         col1.image(img, use_column_width=True)
         img=Image.open(path + '/' + names[0]+ str(2)+ '.JPG')
         col2.image(img, use_column_width=True)
