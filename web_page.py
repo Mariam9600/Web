@@ -43,8 +43,10 @@ def  main():
     address=[' Upper Level Overseas Passenger Terminal, The Rocks\n', ' 305 Cleveland St, Redfern\xa0\n', ' Ground Floor, 58 Riley St, Darlinghurst\xa0\n', ' 131 King street, Newtown\n', ' Level 1/180/186 Campbell Parade, Bondi Beach\n', ' 362 Oxford St, Paddington\n', ' 92 Hargrave St, Paddington\xa0\n', ' 83 Percival Rd, Stanmore\n', ' 46_52 meagher st, chippendale\xa0\n', ' 270 Campbell Parade, North Bondi\xa0\n']
     rating=['4.5 stars\n', '4.7 stars\n', '4.2 stars\n', '4.7 stars\n', '3.6 stars\n', '4.6 stars\n', '4.5 stars\n', '4.8 stars\n', '4.5 stars\n', '4.1 stars\n']
 
-
-    
+    path = os.path.dirname(__file__)
+    st.write(
+        path
+    )
 
     
     with Quay:
