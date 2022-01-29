@@ -46,10 +46,8 @@ def  main():
 
     path = os.path.dirname(__file__)
     st.write(path)
-    from os import listdir
-    from os.path import isfile, join
-    onlyfiles = [f for f in listdir(path) if isfile(join(path, f))]
-    st.write(onyfiles)
+    arr = os.listdir()
+    st.write(arr)
     
     with Quay:
         st.header(names[0])
