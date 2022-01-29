@@ -45,6 +45,11 @@ def  main():
     rating=['4.5 stars\n', '4.7 stars\n', '4.2 stars\n', '4.7 stars\n', '3.6 stars\n', '4.6 stars\n', '4.5 stars\n', '4.8 stars\n', '4.5 stars\n', '4.1 stars\n']
 
     path = os.path.dirname(__file__)
+    st.write(path)
+    from os import listdir
+    from os.path import isfile, join
+    onlyfiles = [f for f in listdir(path) if isfile(join(path, f))]
+    st.write(onyfiles)
     
     with Quay:
         st.header(names[0])
