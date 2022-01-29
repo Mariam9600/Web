@@ -45,25 +45,21 @@ def  main():
     rating=['4.5 stars\n', '4.7 stars\n', '4.2 stars\n', '4.7 stars\n', '3.6 stars\n', '4.6 stars\n', '4.5 stars\n', '4.8 stars\n', '4.5 stars\n', '4.1 stars\n']
 
     path = os.path.dirname(__file__)
-    st.write(
-        path
-    )
-
     
     with Quay:
         st.header(names[0])
         st.markdown("##### Address :   "+ address[0])
         st.markdown("##### Star-Rating :  "+ rating[0])
         col1,col2,col3,col4, col5=st.columns(5)
-        img=Image.open(names[0]+ str(1) + '.jpg')
+        img=Image.open(path + '/' + names[0]+ str(1) + '.jpg')
         col1.image(img, use_column_width=True)
-        img=Image.open(names[0]+ str(2)+ '.jpg')
+        img=Image.open(path + '/' + names[0]+ str(2)+ '.jpg')
         col2.image(img, use_column_width=True)
-        img=Image.open(names[0]+ str(3)+ '.jpg')
+        img=Image.open(path + '/' + names[0]+ str(3)+ '.jpg')
         col3.image(img, use_column_width=True)
-        img=Image.open(names[0]+ str(4)+ '.jpg')
+        img=Image.open(path + '/' + names[0]+ str(4)+ '.jpg')
         col4.image(img, use_column_width=True)
-        img=Image.open(names[0]+ str(5)+ '.jpg')
+        img=Image.open(path + '/' + names[0]+ str(5)+ '.jpg')
         col5.image(img, use_column_width=True)
         if st.button("Read More About "+ names[0][3:]):
             st.write(website[0])
